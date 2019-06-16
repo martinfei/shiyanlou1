@@ -1,0 +1,12 @@
+amount = float(input('Enter amount:'))
+inrate = float(input('Enter inrate:'))
+period = int(input('Enter year:'))
+year = 1
+values = 0
+while year <= period:
+    values = amount + amount * inrate
+    print('year{} RS.{:.2f}'.format(year,values))
+    amount = values
+    year += 1
+
+
